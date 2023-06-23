@@ -1,0 +1,36 @@
+/* To import external font family from google fonts */
+/* @import url(""); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* if a font-family is not represented within quotes then they are web safe fonts , the fonts are universally installed across all browsers and devices */
+body {
+    font-family: "Silkscreen";
+    /* to apply in your entie page */
+}
+h1 {
+  /* text-decoration: line-through;
+  text-decoration-line: underline overline;
+  text-decoration-color: aqua;
+  text-decoration-style: wavy;
+  color: transparent;
+  text-shadow: 4px 4px 10px black; */
+  
+  font-family: 'Times New Roman', Times, sans-serif;
+  /* if the previous one does not work the rest will do */
+
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 1rem;
+}
+
+p {
+    font-size: larger;
+    font-weight: 300;
+    font-style: italic;
+}
