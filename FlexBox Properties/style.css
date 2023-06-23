@@ -1,0 +1,132 @@
+/*
+    To use flex box , define the display of the parent container as flex.
+
+    the row part is called the main - axis use justify-content - runs horizontally
+
+    the column part is call the cross - axis use align items - runs vertically
+    
+    <!-- The flex container becomes flexible by setting the display property to flex -->
+    <!-- Flex direction
+         Flex Wrap
+         Flex Flow
+         Justify Content
+         Align Items
+         Align Content
+    -->
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 400px;
+  border: 2px solid red;
+  display: flex;
+  /* flex-direction: column; */
+  /* by default - row */
+  /* row-reverse */
+  /* column-reverse */
+  /* flex-wrap: wrap; */
+  /* wrap-reverse */
+  /* gap: 10px; --> sorthand property of below two */
+  /* row-gap: 10px; */
+  /* column-gap: 10px; */
+
+  /* short hand property for flex-direction : row and flex-wrap : wrap  */
+  flex-flow: wrap row;
+
+  /* puts things in center along the main axis */
+  /* justify-content: center; */
+
+  /* puts space equally on both the side of the boxes */
+  justify-content: space-around;
+
+  /*space in between*/
+  /* justify-content: space-between; */
+
+  /* distributed space evenly with each children */
+  /* justify-content: space-evenly; */
+
+  /*starts from left to right, */
+  /* justify-content: flex-start; */
+
+  /* starts from right to left */
+  /* justify-content: flex-end; */
+
+  /* you might have noticed that the boxes have taken the size of the parent container i.e they are strected, it is because the default property of align-item is set to stretch 
+    align-items: stretch;
+    */
+
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+
+  /* to handle the space between two children along the cross axis */
+  /* align-content: flex-start; */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+}
+
+/* 
+    Above are the properties that are to be applied on to the parent container only
+ */
+
+/*
+    Below are some properties that are applicable to children only     
+        - order
+        - flex-grow
+        - flex-shrink
+        - flex-basis
+        - flex
+        - align-self
+
+    you can set separate type of flex properties to each children.
+*/
+
+
+/* 
+    define width of any element along the main axis - use flex-basis
+    or 
+    flex-basis defines the initial width along the main axis;
+ */
+.box {
+  border: 2px solid green;
+  width: 80px;
+  /* flex-basis: 25%; */
+}
+
+#box-1 {
+    /* default value is 0 */
+    /* goes to end */
+    /* order: 1; */
+
+    /* box-1 occupies the remaining space */
+    /* default value is 0 */
+    flex-grow: 1;
+
+    /* default value is 1 */
+    flex-shrink: 2;
+    flex-basis: 100px;
+}
+#box-2 {
+    /* order: 2; */
+    /* box-1 will also grow, box two will also grow but box two will grow 2 time faster to box -1  */
+    flex-grow: 100;
+    
+}
+/* IMPORTANT - flex is the sorthand property for flex-grow, flex-shrink and flex-basis */
+#box-3 {
+    flex: 0 0 200px;
+    /* aligns itself apart from others in the cross- axis */
+    /* align-self: flex-start; */
+    align-self: stretch;
+}
+
+#box-4 {
+    /* shrinks faster as compared to box-1 */
+    flex-shrink: 3;
+}
+
+
