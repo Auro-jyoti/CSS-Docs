@@ -1,0 +1,47 @@
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  /* width: 50%; */
+  /* display: inline; */
+  /* widht can not be set as display is inline */
+  /* to put widht, do inline-block instead */
+  display: inline-block;
+  width: 400px;
+}
+/* For inline elements even if you put margin for all the sides it will only effect right and left*/
+a {
+  /* this is an anchor tag , no matter how much width i put , it will not affect as it is an inline element */
+  /* to put the width set the display to block. */
+  /* you can set inline, block and inline-block */
+}
+
+img {
+  /* since this is an inline-block element its width and height can be defined by user */
+}
+
+ul {
+  list-style: none;
+  text-align: end;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+}
+
+li:hover {
+    color: violet;
+    cursor: pointer;
+}
