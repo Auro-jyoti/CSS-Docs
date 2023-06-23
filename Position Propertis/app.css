@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+/* by default the postion is static , if you again set it to static it will not impact */
+
+.container {
+    width: 300px;
+    height: 600px;
+    background-color: gainsboro;
+    margin: 100px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+}
+/* position: relative, means it will set its positon relative to its parent */
+.red {
+    position: relative;
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    /* right: 100px means 100px from the right side you can also put -ve values as well */
+    right: 100px;
+}
+
+/* like the relative property works relative to its parent the absolute property does not work that way, usually the parent for the abosolute properties is the root but not always */
+/* it usually works relative to that parent that has set the posion as relative */
+.green {
+    background-color: green;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+/* works relative to root */
+.blue {
+    background-color: blue;
+    position: fixed;
+    z-index: 2;
+}
+/* the one with higher value of z-index will stay on top */
+
+.purple {
+    background-color: purple;
+    position: sticky;
+    top: 500px;
+}
+
+.spacer {
+    background-color: lightcyan;
+    height: 300vh;
+}
+
+/* one more important thing is the z - index, basically z -index comes into picture when one item it overlapping the other, when does this happens , when we define the child elements inside the parent elements */
