@@ -165,3 +165,68 @@ header {
 .header-right img {
     width: 600px ;
 }
+
+/* Companies Section */
+
+.companies-header {
+    margin-block: 20px; 
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    height: 46px;
+}
+
+/* Feature Section */
+
+.features-section {
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url("./assets/asset\ 34.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-header {
+    text-align: center;
+}
+
+.features-header h2 {
+    margin-bottom: 20px;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* big feature section */
+
+.big-features-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container {
+    gap: 30px;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-description {
+    flex-direction: column;
+    align-items: flex-start;
+}
